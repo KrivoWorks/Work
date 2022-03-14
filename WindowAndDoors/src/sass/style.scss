@@ -1,0 +1,13 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+* {
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/title';
