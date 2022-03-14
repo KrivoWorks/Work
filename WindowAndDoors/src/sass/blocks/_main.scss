@@ -1,11 +1,12 @@
 .main {
+    margin-top: 80px;
     &__wrapper {
         padding: 140px 0 210px 0;
         min-height: 650px;
         background: url("../img/bg-main.jpg") (center/cover) no-repeat;
     }
     &__descr {
-        margin-top: 25px;
+        margin: 25px 0 55px 0;
         width: 500px;
     }
 }
