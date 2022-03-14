@@ -1,3 +1,43 @@
 .header {
-    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        background-color: #fff;
+        border-bottom: 2px solid #F28A17;
+    }
+    &__logo {
+        margin: auto 0;
+    }
+    &__menu {     
+        margin: auto 0;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            margin: 0;
+            list-style-type: none;
+            li {
+                padding: 0 13px;
+                font-size: 18px;
+                color: #2B2A28;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__contact {
+        margin: auto 0;
+        display: flex;
+        img {
+            margin: auto 0;
+        }
+    }
+    &__phone {
+        padding-left: 20px;
+        font-size: 26px;
+        color: #F28A17;
+        font-weight: 700;
+    }
 }
