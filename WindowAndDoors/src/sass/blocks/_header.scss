@@ -1,15 +1,13 @@
 .header {
+    width: 1400px;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        background-color: #fff;
-        border-bottom: 2px solid $main-color;
-    }
+    padding: 0 100px;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 2px solid $main-color;
     &__logo {
         margin: auto 0;
     }
@@ -47,7 +45,7 @@
         }
     }
     &__phone {
-        padding-left: 20px;
+        padding-left: 15px;
         font-size: 26px;
         color: $main-color;
         font-weight: 700;

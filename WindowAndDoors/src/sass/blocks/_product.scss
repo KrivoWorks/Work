@@ -1,0 +1,14 @@
+.product {
+    padding: 170px 100px 140px 100px;
+    height: 800px;
+    background: $blue-color;
+    &-select {
+        width: 250px;
+        height: 400px;
+        &__title {
+            color: #fff;
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+}
