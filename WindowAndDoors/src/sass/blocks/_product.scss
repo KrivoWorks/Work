@@ -26,15 +26,24 @@
             color: #fff;
             font-size: 24px;
             font-weight: 700;
-            margin: 7px 0;
+            margin: 10px 0;
             width: 200px;
             height: 70px;
             border: none;
             background-color: #4FB8CF;
             border-radius: 20px;
+            text-align: center;
+            line-height: 70px;
+            &:hover {
+                cursor: pointer;
+                background-color: #4cb0c7;
+            }
             &_active {
-                font-size: 50px;
                 background-color: $main-color;
+                &:hover {
+                    cursor: default;
+                    background-color: $main-color;
+                }
             }
         }
     }

@@ -21,15 +21,15 @@
             margin: 0;
             list-style-type: none;
             a {
-                &:hover {
-                    text-decoration: none;
-                    color: $blue-color;
-                }  
+                text-decoration: none;
             }
             li {
                 padding: 0 13px;
                 font-size: 18px;
                 color: #2B2A28;
+                &:hover {
+                    color: $main-color;
+                }
             }
         }
     }
@@ -50,5 +50,8 @@
         font-size: 26px;
         color: $main-color;
         font-weight: 700;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
