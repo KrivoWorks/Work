@@ -5,7 +5,7 @@
     background: $blue-color;
     &-title {
         position: absolute;
-        width: 580px;
+        width: 560px;
         right: 100px;
     }
     &-brand {
@@ -21,16 +21,20 @@
             margin-top: 23px;
             list-style-type: none;
             padding-left: 0;
-            button {
-                color: #fff;
-                font-size: 24px;
-                font-weight: 700;
-                margin: 7px 0;
-                width: 200px;
-                height: 70px;
-                border: none;
-                background-color: #4FB8CF;
-                border-radius: 20px;
+        }
+        &__tab {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 7px 0;
+            width: 200px;
+            height: 70px;
+            border: none;
+            background-color: #4FB8CF;
+            border-radius: 20px;
+            &_active {
+                font-size: 50px;
+                background-color: $main-color;
             }
         }
     }

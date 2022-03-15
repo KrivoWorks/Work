@@ -4,6 +4,9 @@
     background: url("../img/bg-main.jpg") center (center/cover) no-repeat;
     padding: 135px 100px 0 100px;
     &__descr {
+        color: $dark-color;
+        font-size: 18px;
+        line-height: 18px;
         margin: 25px 0 55px 0;
         width: 500px;
     }

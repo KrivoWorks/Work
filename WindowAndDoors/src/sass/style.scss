@@ -6,7 +6,7 @@
 	font-family: 'Roboto', sans-serif;
 }
 .container {
-	width: 1400px;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 
@@ -17,3 +17,4 @@
 @import 'blocks/product';
 @import 'blocks/advantages';
 @import 'blocks/measuring';
+@import 'blocks/forms';
