@@ -8,54 +8,153 @@
         width: 560px;
         right: 100px;
     }
-    &-brand {
+    &__brand {
         width: 250px;
-        height: 400px;
-        &__title {
-            color: #fff;
-            font-size: 24px;
-            line-height: 24px;
-            font-weight: 400;
+        width: 250px;
+        color: #fff;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    &__tabs {
+        width: 250px;
+        margin-top: 23px;
+        list-style-type: none;
+        padding-left: 0;
+    }
+    &__tab {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 10px 0;
+        width: 200px;
+        height: 70px;
+        border: none;
+        background-color: #4FB8CF;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 70px;
+        transition: 0.3s all;
+        &:hover {
+            cursor: pointer;
+            background-color: #4cb0c7;
         }
-        &__tabs {
-            margin-top: 23px;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        &__tab {
-            color: #fff;
-            font-size: 24px;
-            font-weight: 700;
-            margin: 10px 0;
-            width: 200px;
-            height: 70px;
-            border: none;
-            background-color: #4FB8CF;
-            border-radius: 20px;
-            text-align: center;
-            line-height: 70px;
+        &_active {
+            background-color: $main-color;
             &:hover {
-                cursor: pointer;
-                background-color: #4cb0c7;
-            }
-            &_active {
+                cursor: default;
                 background-color: $main-color;
-                &:hover {
-                    cursor: default;
-                    background-color: $main-color;
-                }
             }
         }
     }
-
-
+    &__content {
+        display: none;
+        position: absolute;
+        top: 140px;
+        left: 270px;
+        min-width: 700px;
+        min-height: 700px;
+        &_active {
+            display: flex;
+            z-index: 2;
+        }
+        &__item {
+            margin: 0 auto;
+        }
+    }
     &__background {
         position: absolute;
         width: 800px;
         height: 300px;
-        top: 350px;
+        top: 330px;
         right: 130px;
         background-color: #4FB8CF;
         border-radius: 20px;
+        z-index: 1;
+    }
+
+    &-rehau {
+        &__tabs {
+            position: absolute;
+            color: #fff;
+            padding-left: 0;
+        }
+        &__tab {
+            position: absolute;
+            list-style-type: none;
+            background-color: #fff;
+            border: 8px solid #DDD;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+            transition: 0.3s all;
+            &_camera {
+                top: -330px;
+                left: 400px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ddd;
+                    border: 8px solid #bcbcbc;
+                    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+                }
+            }
+            &_window {
+                top: -380px;
+                left: 315px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ddd;
+                    border: 8px solid #bcbcbc;
+                    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+                }
+            }
+            &_sealer {
+                top: -500px;
+                left: 230px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ddd;
+                    border: 8px solid #bcbcbc;
+                    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+                }
+            }
+            &_color {
+                top: -170px;
+                left: 180px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ddd;
+                    border: 8px solid #bcbcbc;
+                    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+                }
+            }
+            &_profile {
+                top: -80px;
+                left: 390px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ddd;
+                    border: 8px solid #bcbcbc;
+                    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+                }
+            }
+        }
+        &__descr {
+            position: absolute;
+            width: 350px;
+            top: -330px;
+            left: 600px;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+        &__subtitle {
+            margin-top: 20px;
+            font-style: 20px;
+            line-height: 20px;
+        }
     }
 }

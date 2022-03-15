@@ -27,6 +27,7 @@
                 padding: 0 13px;
                 font-size: 18px;
                 color: #2B2A28;
+                transition: 0.3s all;
                 &:hover {
                     color: $main-color;
                 }
@@ -50,6 +51,7 @@
         font-size: 26px;
         color: $main-color;
         font-weight: 700;
+        transition: 0.3s all;
         &:hover {
             text-decoration: none;
         }
