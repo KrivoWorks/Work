@@ -1,13 +1,14 @@
 .header {
-    width: 1400px;
-    position: fixed;
     display: flex;
     justify-content: space-between;
-    top: 0;
-    padding: 0 100px;
+    position: fixed;
+    top: 0;  
     height: 80px;
     background-color: #fff;
-    border-bottom: 2px solid $main-color;
+    border-bottom: 3px solid $main-color;
+    width: 1400px;
+    padding: 0 100px;
+    z-index: 5;
     &__logo {
         margin: auto 0;
     }

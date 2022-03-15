@@ -1,14 +1,37 @@
 .product {
+    position: relative;
     padding: 170px 100px 140px 100px;
     height: 800px;
     background: $blue-color;
-    &-select {
+    &-title {
+        position: absolute;
+        width: 580px;
+        right: 100px;
+    }
+    &-brand {
         width: 250px;
         height: 400px;
         &__title {
             color: #fff;
-            font-size: 26px;
-            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+        &__tabs {
+            margin-top: 23px;
+            list-style-type: none;
+            padding-left: 0;
+            button {
+                color: #fff;
+                font-size: 24px;
+                font-weight: 700;
+                margin: 7px 0;
+                width: 200px;
+                height: 70px;
+                border: none;
+                background-color: #4FB8CF;
+                border-radius: 20px;
+            }
         }
     }
 }

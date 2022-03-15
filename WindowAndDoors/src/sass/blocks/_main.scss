@@ -1,8 +1,8 @@
 .main {
     margin-top: 80px;
-    padding: 140px 100px 210px 100px;
     min-height: 650px;
-    background: url("../img/bg-main.jpg") (center/cover) no-repeat;
+    background: url("../img/bg-main.jpg") center (center/cover) no-repeat;
+    padding: 135px 100px 0 100px;
     &__descr {
         margin: 25px 0 55px 0;
         width: 500px;
