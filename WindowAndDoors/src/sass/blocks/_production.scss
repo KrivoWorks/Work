@@ -1,0 +1,16 @@
+.production {
+    height: 787px;
+    background: url("../img/bg-production.jpg") no-repeat;
+    padding: 200px 100px 0 100px;
+    vertical-align: bottom;
+    margin-top: 110px;
+    &__wrapper {
+        float: right;
+        width: 500px;
+        text-align: left;
+    }
+    &__subtitle {
+        margin-top: 150px;
+        width: 360px;
+    }
+}

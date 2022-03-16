@@ -1,8 +1,12 @@
 .title {
     color: $dark-color;;
     font-size: 56px;
+    font-weight: 700;
     line-height: 56px;
     &_white {
         color: #fff;
+    }
+    &_right {
+        float: right;
     }
 }
