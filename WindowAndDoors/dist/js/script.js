@@ -13,4 +13,18 @@ $(document).ready(function() {
         .closest('div.rehau').find('div.rehau__descr').removeClass('rehau__descr_active').eq($(this).index()).addClass('rehau__descr_active');
     });
 
+    //Grunder
+    $('ul.grunder__tabs').on('click', 'li:not(.grunder__tab_active)', function() {
+        $(this)
+        .addClass('grunder__tab_active').siblings().removeClass('grunder__tab_active')
+        .closest('div.grunder').find('div.grunder__descr').removeClass('grunder__descr_active').eq($(this).index()).addClass('grunder__descr_active');
+    });
+
+    //Richmont
+    $('ul.richmont__tabs').on('click', 'li:not(.richmont__tab_active)', function() {
+        $(this)
+        .addClass('richmont__tab_active').siblings().removeClass('richmont__tab_active')
+        .closest('div.richmont').find('div.richmont__descr').removeClass('richmont__descr_active').eq($(this).index()).addClass('richmont__descr_active');
+    });
+
 });
