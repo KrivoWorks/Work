@@ -1,7 +1,7 @@
 .product {
     position: relative;
     padding: 170px 100px 140px 100px;
-    height: 800px;
+    height: 830px;
     background: $blue-color;
     &-title {
         position: absolute;
@@ -16,7 +16,6 @@
         font-weight: 400;
     }
     &__tabs {
-        width: 250px;
         margin-top: 23px;
         list-style-type: none;
         padding-left: 0;
