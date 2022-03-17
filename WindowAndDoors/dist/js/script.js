@@ -27,4 +27,34 @@ $(document).ready(function() {
         .closest('div.richmont').find('div.richmont__descr').removeClass('richmont__descr_active').eq($(this).index()).addClass('richmont__descr_active');
     });
 
+    $('.accessories__inner').slick({
+        slidesToShow: 2,
+        infinite: true,
+        dots: true,
+        speed: 100, // скорость переключения слайда в милисекундах
+        // adaptiveHeight: true, высота подстраивается под высоту слайда
+        autoplay: true,
+        autoplaySpeed: 2000,
+        // fade: true, - прояление картинки
+        // cssEase: 'linear' - прояление картинки равномерное
+        arrows: false,
+
+        // настройка стрелочек
+        // prevArrow: '<button type="button" class="slick-prev">Previous</button>' - по умолчанию
+
+        // чтобы картинки отображались правильно ../  в начале указывать не нужно
+        
+        responsive: [
+            {
+                breakpoint: 992, // на каком промежутке будем устанавливать эти правила
+                // эти правила работают с низу, от 0 до 992px
+                settings: {
+                    dots: true,
+                    arrows: false
+                    // UX механизм отключающий стрелки на маленьких экранах
+                }
+            }
+        ]
+    });
+
 });

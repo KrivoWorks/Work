@@ -27,4 +27,16 @@ $(document).ready(function() {
         .closest('div.richmont').find('div.richmont__descr').removeClass('richmont__descr_active').eq($(this).index()).addClass('richmont__descr_active');
     });
 
+    $('.accessories__inner').slick({
+        infinite: true,
+        dots: true,
+        speed: 100, // скорость переключения слайда в милисекундах
+        // adaptiveHeight: true, высота подстраивается под высоту слайда
+        autoplay: true,
+        autoplaySpeed: 2000,
+        // fade: true, - прояление картинки
+        // cssEase: 'linear' - прояление картинки равномерное
+        arrows: false,
+    });
+
 });
