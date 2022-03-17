@@ -21,17 +21,33 @@
         display: inline-block;
         width: auto;
         margin-right: 5px;
-        margin-bottom: 7px;
+        margin-bottom: 5px;
         padding: 0 25px;
         background-color: $blue-color;
         height: 55px;
         font-size: 13px;
         font-weight: 700;
-        text-align: center;
         text-transform: uppercase;
         line-height: 55px;
         &:hover {
             background-color: $blue-color;
+        }
+    }
+    &_dark {
+        display: inline-block;
+        width: auto;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        padding: 0 25px;
+        background-color: #A3A3A3;
+        height: 50px;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 50px;
+        &:hover {
+            cursor: default;
+            background-color: #A3A3A3;
         }
     }
 }

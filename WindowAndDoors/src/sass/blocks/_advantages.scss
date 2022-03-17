@@ -1,4 +1,6 @@
 .advantages {
+    display: flex;
+    justify-content: space-between;
     height: 250px;
     padding: 60px 100px 0 100px;
     background-color: $main-color;
@@ -13,24 +15,62 @@
     &_time {
         background-color: $blue-color;
     }
-    &__item {
+    &-item {
         display: flex;
         position: relative;
-    }
-    &_age {
-        position: absolute;
-        color:#fff;
-        font-size: 190px;
-        line-height: 190px;
-        font-weight: 700;
-    }
-    &__wrapper {
-        padding-left: 250px;
+        &_age {
+            position: absolute;
+            color:#fff;
+            font-size: 190px;
+            line-height: 190px;
+            font-weight: 700;
+            top: -30px;
+        }
+        &__wrapper {
+            padding-left: 150px;
+            &_second {
+                padding-left: 150px;
+            }
+        }
+        h2 {
+            font-size: 45px;
+        }
     }
     &_hashtag {
         color:#fff;
         font-size: 30px;
         font-weight: 400;
+    }
+    &_second {
+        background-color: $blue-color;
+        display: flex;
+    }
+    &-day {
+        position: relative;
+        padding-right: 100px;
+        &__subheader {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &_score {
+            margin-top: 10px;
+            position: absolute;
+            color: #fff;
+            font-size: 120px;
+            font-weight: 700;
+            top: -20px;
+        }
+        &__wrapper {
+            padding-left: 240px;
+            h2 {
+                color: #fff;
+                font-size: 24px;
+                line-height: 26px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
     }
 }
     

@@ -1,0 +1,9 @@
+.service {
+    height: 690px;
+    background: url("../img/bg-service.jpg");
+    padding: 140px 100px 0 100px;
+    &__buttons {
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+}
