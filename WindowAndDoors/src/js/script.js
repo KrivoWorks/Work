@@ -27,6 +27,7 @@ $(document).ready(function() {
         .closest('div.richmont').find('div.richmont__descr').removeClass('richmont__descr_active').eq($(this).index()).addClass('richmont__descr_active');
     });
 
+    //Slider
     $('.accessories__carousel').slick({
         infinite: true,
         dots: false,
@@ -37,5 +38,16 @@ $(document).ready(function() {
         pauseOnHover: false,
         touchMove: false,
         accessibility: false,
+    });
+
+    //Modal
+    $('[data-modal=application]').on('click', function() {
+        $('.overlay, #application').fadeIn();
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #application, #services, #thanks').fadeOut();
+    });
+    $('.button__service').on('click', function() {
+        $('.overlay, #services').fadeIn();
     });
 });
