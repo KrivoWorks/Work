@@ -5,8 +5,8 @@
 * {
 	font-family: 'Roboto', sans-serif;
 }
-.container {
-	max-width: 1400px;
+.header, .container, .footer {
+	width: 1400px;
 	margin: 0 auto;
 }
 
@@ -23,3 +23,5 @@
 @import 'blocks/forms';
 @import 'blocks/production';
 @import 'blocks/product';
+@import 'blocks/accessories';
+@import 'blocks/install';

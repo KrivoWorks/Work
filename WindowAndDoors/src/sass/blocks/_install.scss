@@ -1,0 +1,15 @@
+.install {
+    height: 750px;
+    padding: 130px 100px 0 130px;
+    background: url("../img/bg-install.jpg");
+    &__wrapper {
+        float: right;
+        width: 600px;
+        color: #fff;
+    }
+    &__subtitle {
+        margin-top: 155px;
+        font-weight: 400;
+        padding-bottom: 45px;
+    }
+}

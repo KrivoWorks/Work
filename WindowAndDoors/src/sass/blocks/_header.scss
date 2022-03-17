@@ -2,11 +2,12 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
-    top: 0;  
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     height: 80px;
     background-color: #fff;
     border-bottom: 3px solid $main-color;
-    width: 1400px;
     padding: 0 100px;
     z-index: 5;
     &__logo {

@@ -1,0 +1,11 @@
+.accessories {
+    padding: 130px 100px 0 100px;
+    height: 610px;
+    background: url("../img/bg-accessories.jpg") right no-repeat;
+    &__subtitle {
+        width: 600px;
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
