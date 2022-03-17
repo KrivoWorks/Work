@@ -63,7 +63,7 @@
     &__wrapper {
         position: absolute;
         left: 580px;
-        top: -310px;
+        top: -320px;
     }
     &__descr {
         display: none;
@@ -73,7 +73,6 @@
             position: absolute;
             display: flex;
             flex-direction: column;
-            // z-index: 100;
         }
     }
     &__title {

@@ -1,8 +1,6 @@
 .advantages {
-    display: flex;
-    justify-content: space-between;
     height: 250px;
-    padding: 60px 100px 0 100px;
+    padding: 10px 100px 0 100px;
     background-color: $main-color;
     &__descr {
         margin-top: 20px;
@@ -12,21 +10,50 @@
         width: 500px;
         color: #fff;
     }
-    &_time {
+    &_hashtag {
+        color:#fff;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    &-price {
+        display: block;
+        padding-top: 60px;
+    }
+    &-time {
+        position: relative;
+        background-color: $blue-color;
+        &_age {
+            position: absolute;
+            // margin-top: 30px;
+            color:#fff;
+            font-size: 190px;
+            line-height: 20px;
+            font-weight: 700;
+            top: 50px;
+        }
+        &__descr {
+            margin-top: 55px;
+            padding-left: 260px;
+        }
+    }
+    &-second {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
         background-color: $blue-color;
     }
     &-item {
-        display: flex;
-        position: relative;
+        margin-top: 40px;
         &_age {
             position: absolute;
             color:#fff;
             font-size: 190px;
             line-height: 190px;
             font-weight: 700;
-            top: -30px;
+            top: 30px;
         }
         &__wrapper {
+            margin-top: 10px;
             padding-left: 150px;
             &_second {
                 padding-left: 150px;
@@ -36,16 +63,8 @@
             font-size: 45px;
         }
     }
-    &_hashtag {
-        color:#fff;
-        font-size: 30px;
-        font-weight: 400;
-    }
-    &_second {
-        background-color: $blue-color;
-        display: flex;
-    }
     &-day {
+        margin-top: 40px;
         position: relative;
         padding-right: 100px;
         &__subheader {
@@ -54,8 +73,8 @@
             font-weight: 700;
         }
         &_score {
-            margin-top: 10px;
             position: absolute;
+            margin-top: 10px;
             color: #fff;
             font-size: 120px;
             font-weight: 700;
@@ -73,4 +92,3 @@
         }
     }
 }
-    

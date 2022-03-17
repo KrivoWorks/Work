@@ -33,7 +33,6 @@
         text-align: center;
         line-height: 70px;
         transition: 0.3s all;
-        z-index: 99;
         &:hover {
             cursor: pointer;
             background-color: #4cb0c7;
@@ -67,11 +66,5 @@
         right: 130px;
         background-color: #4FB8CF;
         border-radius: 20px;
-        // z-index: 1;
-    }
-    &__descr {
-        position: absolute;
-        left: 0;
-        top: 0;
     }
 }

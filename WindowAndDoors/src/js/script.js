@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('ul.product__tabs').on('click', 'li:not(.product__tab_active)', function() {
         $(this)
         .addClass('product__tab_active').siblings().removeClass('product__tab_active')
-        .closest('div.container').find('div.product__content').removeClass('product__content_active').eq($(this).index()).addClass('product__content_active');
+        .closest('section.product').find('div.product__content').removeClass('product__content_active').eq($(this).index()).addClass('product__content_active');
     });
 
     //Rehau
@@ -27,16 +27,15 @@ $(document).ready(function() {
         .closest('div.richmont').find('div.richmont__descr').removeClass('richmont__descr_active').eq($(this).index()).addClass('richmont__descr_active');
     });
 
-    $('.accessories__inner').slick({
+    $('.accessories__carousel').slick({
         infinite: true,
-        dots: true,
-        speed: 100, // скорость переключения слайда в милисекундах
-        // adaptiveHeight: true, высота подстраивается под высоту слайда
+        dots: false,
         autoplay: true,
-        autoplaySpeed: 2000,
-        // fade: true, - прояление картинки
-        // cssEase: 'linear' - прояление картинки равномерное
+        autoplaySpeed: 1700,
         arrows: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        touchMove: false,
+        accessibility: false,
     });
-
 });
