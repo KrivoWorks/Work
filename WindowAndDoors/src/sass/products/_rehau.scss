@@ -2,8 +2,9 @@
     position: relative;
     &__img {
         position: absolute;
-        left: 130px;
+        left: 270px;
         top: -350px;
+        z-index: 3;
     }
     &__tabs {
         position: relative;
@@ -11,6 +12,7 @@
         padding-left: 0;
         top: 240px;
         left: 130px;
+        z-index: 4;
     }
     &__tab {
         position: absolute;
@@ -73,7 +75,6 @@
             position: absolute;
             display: flex;
             flex-direction: column;
-            // z-index: 100;
         }
     }
     &__title {

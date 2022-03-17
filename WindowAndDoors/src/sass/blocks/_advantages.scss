@@ -10,9 +10,27 @@
         width: 500px;
         color: #fff;
     }
-    &__hashtag {
-        color: #fff;
-        font-style: 30px;
+    &_time {
+        background-color: $blue-color;
+    }
+    &__item {
+        display: flex;
+        position: relative;
+    }
+    &_age {
+        top: -20px;
+        position: absolute;
+        color:#fff;
+        font-size: 190px;
+        line-height: 190px;
+        font-weight: 700;
+    }
+    &__wrapper {
+        padding-left: 250px;
+    }
+    &_hashtag {
+        color:#fff;
+        font-size: 30px;
         font-weight: 400;
     }
 }

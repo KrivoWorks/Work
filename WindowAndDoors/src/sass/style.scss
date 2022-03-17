@@ -10,16 +10,16 @@
 	margin: 0 auto;
 }
 
+@import 'products/rehau';
+@import 'products/grunder';
+@import 'products/richmont';
+
 @import 'blocks/header';
 @import 'blocks/main';
 @import 'blocks/title';
 @import 'blocks/buttons';
-@import 'blocks/product';
 @import 'blocks/advantages';
 @import 'blocks/measuring';
 @import 'blocks/forms';
 @import 'blocks/production';
-
-@import 'products/rehau';
-@import 'products/grunder';
-@import 'products/richmont';
+@import 'blocks/product';
