@@ -6,6 +6,7 @@
         width: 600px;
         margin-top: 40px;
         font-size: 18px;
+        line-height: 20px;
         font-weight: 400;
     }
     &__carousel {
@@ -13,8 +14,9 @@
         position: relative;
         width: 400px;
         img {
+            height: 100px;
             display: block;
-            margin: 0 auto;
+            margin: auto;
         }
     }
 }

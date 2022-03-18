@@ -1,5 +1,5 @@
 .production {
-    height: 787px;
+    height: 760px;
     background: url("../img/bg-production.jpg") no-repeat;
     padding: 90px 100px 0 100px;
     vertical-align: bottom;
@@ -10,7 +10,10 @@
         text-align: left;
     }
     &__subtitle {
-        margin-top: 150px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 400;
+        margin-top: 50px;
         width: 360px;
     }
     &__buttons {

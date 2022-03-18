@@ -1,89 +1,396 @@
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
     .header {
-        padding: 0 30px;
         &__logo {
             img {
-                width: 140px;
+                width: 170px;
             }
         }
         &__menu {
-            width: 450px;
+            ul {
+                li {
+                    padding: 0 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        &__contact {
+            img {
+                width: 25px;
+            }
+        }
+        &__phone {
+            font-size: 22px;
+        }
+    }
+    .product {
+        &-title {
+            right: 0;
+            width: 500px;
+        }
+        &__brand {
+            width: 240px;
+            font-size: 20px;
+        }
+        .title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__background {
+            width: 670px;
+            left: 460px;
+        }
+        &__tab {
+            width: 170px;
+        }
+    }
+    .title {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .advantages {
+        &-time {
+            &_age {
+                font-size: 160px;
+            }
+            &__descr {
+                padding-left: 240px;
+            }
+        }
+        &-item {
+            &_age {
+                font-size: 170px;
+            }
+            &__wrapper {
+                padding-left: 130px;
+            }
+            h2 {
+                margin-top: 30px;
+                font-size: 40px;
+            }
+        }
+        &-day {
+            padding-right: 0;
+        }
+    }
+    .measuring {
+        height: 680px;
+    }
+    .production {
+        height: 700px;
+        background-position-x: -130px;
+    }
+    .accessories {
+        background-position-x: 350px;
+        height: 550px;
+        padding-top: 80px;
+        &__subtitle {
+            width: 400px;
+        }
+        &__carousel {
+            img {
+                height: 80px;
+            }
+        }
+    }
+    .install {
+        height: 700px;
+        &__wrapper {
+            width: 500px;
+        }
+    }
+    .rehau, .grunder, .richmont {
+        &__tabs {
+            left: 80px;
+        }
+        &__descr {
+            width: 320px;
+        }
+        &__wrapper {
+            top: -330px;
+        }
+        &__title {
+            font-size: 26px;
+        }
+    }
+    .rehau {
+        &__img {
+            left: 220px;
+        }   
+    }
+    .grunder {
+        &__img {
+            left: 220px;
+        }
+    }
+    .richmont {
+        &__img {
+            left: 210px;
+        }
+    }
+    .service {
+        height: 560px;
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .header {
+        padding: 0 80px;
+        &__wrapper {
+            height: 60px;
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        &__menu {
             ul {
                 li {
                     font-size: 14px;
                 }
             }
         }
-        &__contact {
-            img {
-                width: 30px;
-            }
-        }
-        &__phone {
-            font-size: 20px;
-        }
     }
     .main {
-        padding-top: 80px;
         min-height: 500px;
+        padding: 80px;
+        margin-top: 60px;
+        &__descr {
+            width: 450px;
+        }
+    }
+    .button {
+        font-size: 16px;
+        &_blue {
+            height: 50px;
+            font-size: 13px;
+            line-height: 50px;
+        }
+    }
+
+    .product {
+        height: 750px;
+        padding: 60px 80px 0 80px;
+        &__tab {
+            margin: 0 10px;
+        }
+        &__tabs {
+            display: flex;
+            justify-content: center;
+        }
+        &__brand {
+            width: 100%;
+            text-align: center;
+        }
+        &-title {
+            display: none;
+        }
+        &__background {
+            width: 680px;
+            left: 200px;
+        }
+    }
+    .rehau, .grunder, .richmont {
+        &__tabs {
+            top: 510px;
+            left: -140px;
+        }
+        &__descr {
+            width: 320px;
+        }
+        &__wrapper {
+            top: -330px;
+            left: 550px;
+        }
+        &__title {
+            font-size: 26px;
+        }
+        &__img {
+            width: 280px;
+            top: 30px;
+            left: 90px;
+        }
+    }
+    .rehau {
+        &__tab {
+            &_camera {
+                top: -299px;
+                left: 419px;
+            }
+            &_window {
+                top: -340px;
+                left: 340px;
+            }
+            &_sealer {
+                top: -422px;
+                left: 287px;
+            }
+            &_color {
+                left: 252px;
+            }
+            &_profile {
+                top: -113px;
+                left: 411px;
+            }
+        }   
+    }
+    .grunder {
+        &__tab {
+            &_camera {
+                top: -204px;
+                left: 434px;
+            }
+            &_window {
+                top: -288px;
+                left: 366px;
+            }
+            &_sealer {
+                top: -416px;
+                left: 307px;
+            }
+            &_color {
+                top: -115px;
+                left: 293px;
+            }
+            &_profile {
+                top: -80px;
+                left: 422px;
+            }
+        }
+        &__img {
+            top: 10px;
+        }
+    }
+    .richmont {
+        &__tab {
+            &_camera {
+                top: -253px;
+                left: 452px;
+            }
+            &_window {
+                top: -319px;
+                left: 388px;
+            }
+            &_sealer {
+                top: -410px;
+                left: 323px;
+            }
+            &_color {
+                top: -133px;
+                left: 263px;
+            }
+            &_profile {
+                top: -118px;
+                left: 373px;
+            }
+        }
+    }
+    .advantages {
+        padding: 40px 80px 0 80px;
+        height: 180px;
+        &-time {
+            &_age {
+                top: 35px;
+                font-size: 110px;
+            }
+            &__descr {
+                margin-top: 0;
+                padding-left: 160px;
+            }
+        }
+        &_hashtag {
+            font-size: 20px;
+        }
+        &-item {
+            margin-top: 0;
+            &_age {
+                font-size: 150px;
+                line-height: 125px;
+            }
+            &__wrapper {
+                padding-left: 110px;
+                .title {
+                    margin-top: 0;
+                    font-size: 28px;
+                }
+            }
+        }
+        &-day {
+            margin-top: 0;
+            &__subheader {
+                position: absolute;
+                font-size: 20px;
+                top: -10px;
+            }
+            &_score {
+                font-size: 100px;
+                line-height: 130px;
+                top: -10px;
+            }
+            &__wrapper {
+                margin-top: 20px;
+                padding-left: 200px;
+            }
+        }
+    
+    }
+    .measuring {
+        height: 620px;
+        padding: 80px;
+    }
+    .production {
+        height: 600px;
+        margin-top: 30px;
+        background-position-x: -170px;
+        padding: 80px;
+        &__wrapper {
+            width: 390px;
+        }
+        &__subtitle, &__buttons {
+            margin-top: 30px;
+        }
+    }
+    .accessories {
+        height: 510px;
+        padding: 80px;
+        &__subtitle {
+            margin-top: 30px;
+        }
+    }
+    .install {
+        height: 630px;
+        padding: 80px;
+        &__wrapper {
+            width: 400px;
+        }
+        &__subtitle {
+            margin-top: 30px;
+        }
+    }
+    .service {
+        padding: 80px;
+        height: 520px;
+        &__buttons {
+            padding-bottom: 30px;
+        }
+    }
+    .footer {
+        padding: 60px 80px 0 80px;
+        &-social {
+            &_info {
+                padding-left: 20px;
+            }
+        }
+        &__link {
+            padding-left: 20px;
+        }
     }
 }
 
 @media (max-width: 991px) {
     .container, .footer  {
         width: 100%;
+        right: 0;
     }
-
-    .title {
-        font-size: 40px;
-        line-height: 40px;
-    }
-    .main {
-        padding: 70px 50px 0 50px;
-        min-height: 430px;
-    }
-    .product {
-        padding: 70px 50px 0 50px;
-        &-title {
-            display: none;
-        }
-        &__brand {
-            width: 100%;
-            text-align: center;
-        }
-        &__tabs {
-            display: flex;
-            justify-content: center;
-        }
-        &__tab {
-            margin: 0 10px;
-        }
-        &__background {
-            width: 500px;
-            height: 250px;
-        }
-        img {
-            width: 250px;
-        }
-    }
-    .advantages{
-        padding: 70px 50px 0 50px;
-    }
-
-    .grunder, .rehau, .richmont {
-        top: 400px;
-        right: 160px;
-        &__wrapper {
-            left: 380px;
-            top: -380px;
-        }
-    }
-    // .rehau {
-
-    // }
-    // .richmont {
-
-    // }
 }
 
 // @media (max-width: 767px) {

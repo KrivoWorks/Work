@@ -7,6 +7,7 @@
         position: absolute;
         width: 560px;
         right: 100px;
+        z-index: 99;
     }
     &__brand {
         width: 250px;
@@ -60,10 +61,10 @@
     }
     &__background {
         position: absolute;
-        width: 800px;
-        height: 300px;
+        width: 760px;
+        height: 280px;
         top: 330px;
-        right: 130px;
+        left: 480px;
         background-color: #4FB8CF;
         border-radius: 20px;
     }
