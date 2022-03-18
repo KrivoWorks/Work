@@ -12,17 +12,13 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                       // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru'; 	   // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                // Enable SMTP authentication
-$mail->Username = 'krivo-test@mail.ru';                  // Наш логин
-$mail->Password = 'k5DgNTyrRS0gwPAGG4Ca';                  // Наш пароль от ящика
+$mail->Username = 'order.okna-dveri@mail.ru';                  // Наш логин
+$mail->Password = 'HRZg5QdS1xZfZ9ALWXv9';                  // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';             // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                     // TCP port to connect to
-
-// krivo-test@mail.ru
-// Fyyf1970
-// k5DgNTyrRS0gwPAGG4Ca - специальный пароль
  
-$mail->setFrom('krivo-test@mail.ru', 'Order');  // От кого письмо 
-$mail->addAddress('okna-dveri52@yandex.ru');  // Add a recipient
+$mail->setFrom('order.okna-dveri@mail.ru', 'Order');
+$mail->addAddress('roman.krivopalov@mail.ru');  // Add a recipient
 //$mail->addAddress('ellen@example.com');               	// Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

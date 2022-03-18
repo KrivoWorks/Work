@@ -94,8 +94,8 @@ $(document).ready(function() {
             url: "mailer/smart.php",
             data: $(this).serialize()
         }).done(function() {
-            $(this).find("input").val("");
-            $('#application-form, #services-form').fadeOut();
+            $(this).find("input").val('');
+            $('#application, #services').fadeOut();
             $('.overlay, #thanks').fadeIn('');
 
             $('form').trigger('reset');

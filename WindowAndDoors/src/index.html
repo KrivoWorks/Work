@@ -11,20 +11,22 @@
 <body>
 
     <header class="header">
-        <a href="" class="header__logo">
-            <img src="img/logo.png" alt="Logo">
-        </a>
-        <nav class="header__menu">
-            <ul>
-                <a href="#product"><li>продукция</li></a>
-                <a href="#measuring"><li>заказать замер</li></a>
-                <a href="#production"><li>производство</li></a>
-                <a href="#footer"><li>контакты</li></a>
-            </ul>
-        </nav>
-        <div class="header__contact">
-            <img src="icons/icone-phone.svg" alt="icone-phone">
-            <a href="+79696251125" class="header__phone">+7 969 625 1125</a>
+        <div class="header__wrapper">
+            <a href="" class="header__logo">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <nav class="header__menu">
+                <ul>
+                    <a href="#product"><li>продукция</li></a>
+                    <a href="#measuring"><li>заказать замер</li></a>
+                    <a href="#production"><li>производство</li></a>
+                    <a href="#footer"><li>контакты</li></a>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <img src="icons/icone-phone.svg" alt="icone-phone">
+                <a href="+79696251125" class="header__phone">+7 969 625 1125</a>
+            </div>
         </div>
     </header>
 
@@ -324,7 +326,7 @@
     </footer>
 
     <div class="overlay">
-        <div id="application" class="modal">
+        <div class="modal" id="application">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Заполните форму заявки</div>
             <div class="modal__descr">и мы сразу с Вами свяжемся</div>
@@ -336,11 +338,11 @@
             </form>
         </div>
 
-        <div id="services" class="modal">
+        <div class="modal" id="services">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Заполните форму заявки</div>
             <div class="modal__descr">и мы сразу с Вами свяжемся</div>
-            <form id="services-form" class="feed-form feed-form_mt25" action="#">
+            <form id="services-form" class="feed-form .feed-form_mt25" action="#">
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш E-mail" type="email">
@@ -348,7 +350,7 @@
             </form>
         </div>
 
-        <div id="thanks" class="modal modal_mini">
+        <div class="modal modal_mini" id="thanks">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Спасибо за Вашу заявку!</div>
             <div class="modal__descr">Наш менеджер свяжется с Вами в ближайшее время</div>
