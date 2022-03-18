@@ -12,4 +12,13 @@
         line-height: 18px;
         font-weight: 400;
     }
+    .error {
+		border: 2px solid red;
+	}
+	label.error {
+		border: none;
+		color: #a3a3a3;
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
 }

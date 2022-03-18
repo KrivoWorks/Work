@@ -50,4 +50,56 @@ $(document).ready(function() {
     $('.button__service').on('click', function() {
         $('.overlay, #services').fadeIn();
     });
+
+    //Validation form
+    function valifateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: 'required',
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: 'Пожалуйста введите своё имя',
+                    minlength: jQuery.validator.format('Введите {0} символа')
+                },
+                phone: 'Пожалуйста введите свой номер телефон',
+                email: {
+                    required: 'Пожалуйста введите свой email',
+                    email: 'Неправильно введён адрес почты'
+                }    
+            }
+        });
+    };
+
+    valifateForms('.measuring form');
+    valifateForms('#application-form');
+    valifateForms('#services-form');
+
+    // phone mask
+    $('input[name=phone]').mask("+7 (999) 999 9999");
+
+    // email
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#application-form, #services-form').fadeOut();
+            $('.overlay, #thanks').fadeIn('');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
