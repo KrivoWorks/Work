@@ -7,7 +7,7 @@
     background-color: #fff;
     border-bottom: 3px solid $main-color;
     padding: 0 100px;
-    z-index: 5;
+    z-index: 100;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -58,6 +58,82 @@
         transition: 0.3s all;
         &:hover {
             text-decoration: none;
+        }
+    }
+    &-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 60px;
+        color: black;
+        background-color: rgba(255, 255 ,255, 0.8);
+        backdrop-filter: blur(5px);
+        transition: 0.8s all;
+        &__logo {
+            img {
+                width: 180px;
+            }
+        }
+        &__title {
+            width: 330px;
+            margin-top: 10px;
+            color: $dark-color;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 700;
+        }
+        &__phone {
+            margin-top: 40px;
+            a {
+                font-size: 20px;
+                font-weight: 700;
+                color: $main-color;
+                transition: 0.3s all;
+                &:hover {
+                    text-decoration: none;
+                    color: $main-color;
+                }
+            }
+        }
+        &__info {
+            margin-top: 10px;
+            display: flex;
+            &_text {
+                color: $dark-color;
+                font-size: 13px;
+                padding-left: 10px;
+            }
+        }
+        &__email {
+            margin-top: 10px;
+            display: flex;
+            &_text {
+                color: $dark-color;
+                font-size: 13px;
+                padding-left: 10px;
+            }
+        }
+        &__social {
+            margin-top: 30px;
+            padding-bottom: 35px;
+            display: flex;
+            img {
+                width: 55px;
+            }
+            &_text {
+                color: $dark-color;
+                font-size: 13px;
+                line-height: 18px;
+                padding-left: 20px;
+            }
+        }
+        &_active {
+            left: 0;
         }
     }
 }

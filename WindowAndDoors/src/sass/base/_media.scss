@@ -387,9 +387,219 @@
 }
 
 @media (max-width: 991px) {
-    .container, .footer  {
-        width: 100%;
-        right: 0;
+    .header {
+        padding: 0 60px;
+        &__menu, &__contact {
+            display: none;
+        }
+        &-mobile {
+            &__title {
+                width: 250px;
+            }
+        }
+    }
+    .button {
+        &_mini {
+            font-size: 12px;
+        }
+        &_blue {
+            font-size: 12px;
+        }
+    }
+    .hamburger {
+        display: block;
+    }
+    .title {
+        font-size: 35px;
+        line-height: 35px;
+        &_white {
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+    .main {
+        min-height: 410px;
+        padding: 60px;
+        &__descr {
+            font-size: 16px;
+            width: 390px;
+        }
+    }
+    .button {
+        font-size: 14px;
+        height: 55px;
+        width: 190px;
+        &_blue {
+            width: 180px;
+            font-size: 11px;
+            line-height: 55px;
+        }
+        &_dark {
+            font-size: 11px;
+            line-height: 11px;
+            width: auto;
+            height: 45px;
+        }
+    }
+    .product {
+        padding: 60px;
+        &__content {
+            min-width: 600px;
+        }
+        &__tab {
+            font-size: 18px;
+            line-height: 60px;
+            width: 150px;
+            height: 60px;
+            margin: 0 6px;
+        }
+        &__background {
+            height: 290px;
+            width: 500px;
+            top: 280px;
+        }
+    }
+
+    .rehau, .grunder, .richmont {
+        img {
+            left: 40px;
+        }
+        &__tabs {
+            left: -190px;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 20px;
+            width: 250px;
+        }
+        &__subtitle {
+            width: 250px;
+            font-size: 14px;
+        }
+        &__wrapper {
+            left: 530px;
+        }
+    }
+    
+    .advantages {
+        height: 170px;
+        padding: 40px 60px 0 60px;
+        &__descr {
+            margin-top: 12px;
+            width: 450px;
+            font-size: 16px;
+        }
+        &-time {
+            &_age {
+                font-size: 90px;
+            }
+            &__descr {
+                padding-left: 125px;
+            }
+        }
+        &_hashtag {
+            font-size: 18px;
+        }
+        &-item {
+            &_age {
+                font-size: 100px;
+                line-height: 110px;
+            }
+            &__wrapper {
+                padding-left: 80px;
+                .title {
+                    font-size: 24px;
+                }
+            }
+        }
+        &-second {
+            justify-content: space-around;
+        }
+        &-day {
+            &_score {
+                font-size: 70px;
+                line-height: 95px;
+            }
+            &__wrapper {
+                padding-left: 140px;
+                .title {
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+    .measuring {
+        padding: 60px;
+        height: 550px;
+        &__subtitle {
+            margin-top: 25px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+    .production {
+        height: 530px;
+        padding: 60px;
+        background-position-x: -340px;
+        &__subtitle {
+            margin-top: 25px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+    .accessories {
+        height: 440px;
+        padding: 60px;
+        background-position-x: 250px;
+        &__subtitle {
+            width: 450px;
+            margin-top: 25px;
+            font-size: 18px;
+        }
+    }
+    .install {
+        height: 490px;
+        padding: 60px;
+        background-position-x: -100px;
+        &__wrapper {
+            width: 370px;
+        }
+        &__subtitle {
+            margin-top: 25px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    .service {
+        height: 470px;
+        padding: 60px;
+    }
+    .footer {
+        padding: 60px;
+        &-phone {
+            font-size: 24px;
+        }
+        &-addr {
+            margin-top: 12px;
+            &_info {
+                font-size: 12px;
+            }
+        }
+        &-email {
+            &_info {
+                font-size: 12px;
+            }
+        }
+        &-social {
+            &__img {
+                width: 60px;
+            }
+            &_info {
+                font-size: 16px;
+                width: 220px;
+            }
+        }
     }
 }
 

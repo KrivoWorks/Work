@@ -1,3 +1,22 @@
+'Use strict'
+window.addEventListener('DOMContentLoaded', () => {
+	const menu = document.querySelector('.header-mobile'),
+		  menuItem = document.querySelector('.header-mobile'),
+		  hamburger = document.querySelector('.hamburger');
+
+	hamburger.addEventListener('click', () => {
+		hamburger.classList.toggle('hamburger_active');
+		menu.classList.toggle('header-mobile_active');
+	});
+
+	menuItem.forEach(item => {
+		item.addEventListener('click', () => {
+			hamburger.classList.toggle('header-mobile_active');
+			menu.classList.toggle('header-mobile_active');
+		})
+	})
+})
+
 $(document).ready(function() {
     
     $('ul.product__tabs').on('click', 'li:not(.product__tab_active)', function() {
