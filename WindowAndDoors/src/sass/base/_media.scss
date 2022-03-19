@@ -603,9 +603,304 @@
     }
 }
 
-// @media (max-width: 767px) {
+@media (max-width: 767px) {
+    .header {
+        padding: 0 40px;
+        &-mobile {
+            width: 65%;
+            padding: 40px;
+        }
+    }
+    .hamburger {
+        right: 40px;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .main {
+        min-height: 350px;
+        &__descr {
+            width: 340px;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+    }
+    .product {
+        padding: 55px 40px 0 40px;
+        height: 620px;
+        &__content {
+            min-width: 450px;
+            min-height: 420px;
+        }
+        &__tab {
+            width: 130px;
+        }
+        &__background {
+            display: none;
+        }
+    }
 
-// }
+    .rehau, .grunder, .richmont {
+        &__tab {
+            height: 40px;
+            width: 40px;
+            border: 6px solid #ddd;
+            &:hover {
+                cursor: default;
+                background-color: #fff;
+                border: 6px solid #DDD;
+            }
+            &_active {
+                background-color: $main-color;
+                border: 6px solid #cf6f07;;
+                &:hover {
+                    cursor: default;
+                    background-color: $main-color;
+                    border: 6px solid #cf6f07;
+                }
+            }
+        }
+        &__descr {
+            width: 230px;
+        }
+        &__wrapper {
+            top: -450px;
+            left: 460px;
+        }
+        &__title {
+            width: 230px;
+        }
+        &__subtitle {
+            width: 230px;
+        }
+        &__img {
+            width: 230px;
+        }
+    }
+    .rehau {
+        &__tab {
+            &_camera {
+                top: -328px;
+                left: 387px;
+            }
+            &_window {
+                top: -358px;
+                left: 329px;
+            }
+            &_sealer {
+                top: -435px;
+                left: 279px;
+            }
+            &_color {
+                top: -221px;
+                left: 260px;
+            }
+            &_profile {
+                top: -181px;
+                left: 381px;
+            }
+        }   
+    }
+    .grunder {
+        &__tab {
+            &_camera {
+                top: -286px;
+                left: 392px;
+            }
+            &_window {
+                top: -360px;
+                left: 339px;
+            }
+            &_sealer {
+                top: -427px;
+                left: 290px;
+            }
+            &_color {
+                top: -196px;
+                left: 271px;
+            }
+            &_profile {
+                top: -156px;
+                left: 391px;
+            }
+        }
+        &__img {
+
+        }
+    }
+    .richmont {
+        &__tab {
+            &_camera {
+                top: -296px;
+                left: 412px;
+            }
+            &_window {
+                top: -336px;
+                left: 362px;
+            }
+            &_sealer {
+                top: -410px;
+                left: 308px;
+            }
+            &_color {
+                top: -196px;
+                left: 252px;
+            }
+            &_profile {
+                top: -175px;
+                left: 344px;
+            }
+        }
+    }
+    .advantages {
+        height: 130px;
+        padding: 30px 40px 0 40px;
+        .title {
+            font-size: 25px;
+            line-height: 25px;
+        }
+        &__descr {
+            width: 420px;
+            font-size: 14px;
+        }
+        &-time {
+            &_age {
+                top: 0;
+                font-size: 70px;
+                line-height: 70px;
+            }
+            &__descr {
+                padding-left: 100px;
+            }
+            .title {
+                font-size: 23px;
+            }
+        }
+        &-item {
+            &_age {
+                font-size: 60px;
+                line-height: 75px;
+            }
+            &__wrapper {
+                padding-left: 43px;
+                .title {
+                    font-size: 18px;
+                }
+            }
+        }
+        &-day {
+            &__subheader {
+                font-size: 14px;
+                top: 12px;
+            }
+            &_score {
+                font-size: 38px;
+                line-height: 100px;
+            }
+            &__wrapper {
+                padding-left: 85px;
+                .title {
+                    font-size: 13px;
+                    line-height: 15px;
+                }
+            }
+        }
+        &_hashtag {
+            font-size: 13px;
+        }
+    }
+    .measuring {
+        height: 500px;
+        padding: 40px;
+        .title {
+            width: 400px;
+        }
+        &__subtitle {
+            width: 340px;
+            font-size: 14px;
+        }
+    }
+    .production {
+        height: 470px;
+        padding: 40px;
+        background-position-x: -480px;
+        &__subtitle {
+            font-size: 14px;
+            width: 320px;
+        }
+        &__wrapper {
+            width: 320px;
+        }
+        &__buttons {
+            width: 300px;
+        }
+    }
+    .button {
+        &_blue {
+            width: 130px;
+            height: 50px;
+            line-height: 11px;
+            padding-top: 13px;
+        }
+        &_dark {
+            font-size: 10px;
+            height: 35px;
+            padding: 0 15px;
+        }
+    }
+    .accessories {
+        height: 370px;
+        padding: 40px;
+        background-position-x: 200px;
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__carousel {
+            width: 280px;
+        }
+    }
+    .install {
+        height: 460px;
+        padding: 40px;
+        background-position-x: -300px;
+        &__wrapper {
+            width: 280px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+    .service {
+        height: 400px;
+        padding: 40px;
+    }
+    .footer {
+        position: relative;
+        height: 280px;
+        padding: 10px 60px 20px 60px;
+        flex-direction: column;
+        justify-content: center;
+        &-addr {
+            margin-top: 15px;
+        }
+        &-social {
+            margin-top: 20px;
+            &_info {
+                width: 300px;
+            }
+            &__img {
+                width: 35px;
+            }
+        }
+        &__link {
+           position: absolute;
+           bottom: 30px;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+    }
+}
 
 // @media (max-width: 575px) {
     
