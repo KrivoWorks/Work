@@ -620,6 +620,7 @@
     }
     .main {
         min-height: 350px;
+        padding: 40px;
         &__descr {
             width: 340px;
             font-size: 14px;
@@ -724,9 +725,6 @@
                 top: -156px;
                 left: 391px;
             }
-        }
-        &__img {
-
         }
     }
     .richmont {
@@ -902,6 +900,307 @@
     }
 }
 
-// @media (max-width: 575px) {
-    
-// }
+@media (max-width: 575px) {
+    .header {
+        padding: 0 20px;
+        &-mobile {
+            width: 75%;
+            &_active {
+                width: 75%;
+            }
+            &__title {
+                width: 230px;
+            }
+        }
+    }
+    .main {
+        padding: 40px 20px;
+        &__descr {
+            width: 230px;
+        }
+    }
+    .title {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .button {
+        height: 45px;
+        width: 170px;
+        &_blue {
+            width: 120px;
+            height: 48px;
+            font-size: 10px;
+        }
+        &_dark {
+            height: 40px;
+            font-size: 8px;
+            width: 125px;
+            padding: 0 8px;
+            margin-right: 0;
+        }
+    }
+    .product {
+        height: 675px;
+        padding: 20px;
+        &__brand {
+            font-size: 18px;
+        }
+        &__tabs {
+            margin-top: 15px;
+        }
+        &__tab {
+            width: 110px;
+            height: 46px;
+            font-size: 15px;
+            line-height: 46px;
+            margin: 0 3px;
+        }
+        &__content {
+            min-width: 270px;
+            min-height: 410px;
+        }
+    }
+
+    .rehau, .grunder, .richmont {
+        &__wrapper {
+            top: -120px;
+            left: 190px;
+        }
+        &__title {
+            width: 240px;
+        }
+        &__subtitle {
+            line-height: 14px;
+        }
+        &__tabs {
+            left: -140px;
+        }
+        img {
+            left: 90px;
+            width: 220px;
+            top: 0;
+        }
+    }
+    .rehau {
+        &__tab {
+            &_camera {
+                top: -356px;
+                left: 386px;
+            }
+            &_window {
+                top: -394px;
+                left: 325px;
+            }
+            &_sealer {
+                top: -450px;
+                left: 275px;
+            }
+            &_color {
+                top: -266px;
+                left: 248px;
+            }
+            &_profile {
+                top: -223px;
+                left: 374px;
+            }
+        }
+    }
+    .grunder {
+        &__tab {
+            &_camera {
+                top: -300px;
+                left: 386px;
+            }
+            &_window {
+                top: -368px;
+                left: 333px;
+            }
+            &_sealer {
+                top: -438px;
+                left: 287px;
+            }
+            &_color {
+                top: -208px;
+                left: 280px;
+            }
+            &_profile {
+                top: -180px;
+                left: 380px;
+            }
+        }
+    }
+    .richmont {
+        &__tab {
+            &_camera {
+                top: -329px;
+                left: 402px;
+            }
+            &_window {
+                top: -385px;
+                left: 353px;
+            }
+            &_sealer {
+                top: -419px;
+                left: 304px;
+            }
+            &_color {
+                top: -231px;
+                left: 243px;
+            }
+            &_profile {
+                top: -210px;
+                left: 335px;
+            } 
+        }
+        &__img {
+            top: 10px;
+        }
+    }
+    .advantages {
+        &-price {
+            height: 140px;
+        }
+        padding: 20px;
+        .title {
+            font-size: 22px;
+            line-height: 22px;
+        }
+        &__descr {
+            width: 260px;
+            line-height: 12px;
+        }
+        &-time {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        &-second {
+            height: 200px;
+            padding: 20px 40px;
+            flex-direction: column;
+        }
+        &-item {
+            &__wrapper {
+                margin-top: 0;
+            }
+            &_age {
+                top: 24px;
+                line-height: 60px;
+            }
+        }
+        &-day {
+            &__wrapper {
+                padding-left: 75px;
+            }
+            .title {
+                font-size: 15px;
+                line-height: 15px;
+            }
+        }
+    }
+    .measuring {
+        padding: 40px 20px;
+        background-position-x: -430px;
+        &__subtitle, .title {
+            width: 260px;
+        }
+    }
+    .feed-form {
+        margin-top: 25px;
+        width: 260px;
+    }
+    .production {
+        padding: 40px 20px;
+        background-position-x: -630px;
+        background-position-y: -100px;
+        height: 450px;
+        &__wrapper {
+            float: left;
+            width: 260px;
+        }
+        &__subtitle {
+            line-height: 14px;
+            width: 260px;
+        }
+        &__buttons {
+            width: 260px;
+        }
+    }
+    .accessories {
+        padding: 40px 20px;
+        &__subtitle {
+            width: 260px;
+            line-height: 14px;
+        }
+        &__carousel {
+            width: 260px;
+        }
+    }
+    .install {
+        padding: 40px 20px;
+        height: 400px;
+        &__wrapper {
+            float: left;
+        }
+        &__subtitle {
+            line-height: 14px;
+        }
+    }
+    .service {
+        height: 440px;
+        padding: 40px 20px;
+        &__buttons {
+            margin-top: 25px;
+        }
+    }
+    .footer {
+        height: 230px;
+        padding: 20px;
+        &-phone {
+            font-size: 20px;
+        }
+        &-social {
+            &_info {
+                width: 200px;
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+        &__link {
+            margin-top: 10px;
+            padding-left: 0;
+            font-size: 12px;
+        }
+    }
+    .modal {
+        padding: 30px;
+        width: 350px;
+        &__close {
+            right: 30px;
+        }
+    }
+}
+
+@media (max-width: 395px) {
+    .header {
+        &-mobile {
+            width: 100%;
+            &_active {
+                width: 100%;
+            }
+        }
+    }
+    .rehau, .grunder, .richmont {
+        &__tabs {
+            left: -190px;
+        }
+        img {
+            left: 40px;
+        }
+    }
+
+    .modal {
+        padding: 20px;
+        width: 300px;
+    }
+}

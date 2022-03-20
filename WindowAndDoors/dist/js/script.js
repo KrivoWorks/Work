@@ -105,7 +105,7 @@ $(document).ready(function() {
     // phone mask
     $('input[name=phone]').mask("+7 (999) 999 9999");
 
-    // email
+    email
     $('form').submit(function(e) {
         e.preventDefault();
         $.ajax({
@@ -121,4 +121,5 @@ $(document).ready(function() {
         });
         return false;
     });
+
 });
