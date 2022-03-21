@@ -28,15 +28,12 @@ $mail->addAddress('okna-dveri52@yandex.ru');  // Add a recipient
 $mail->isHTML(true);                                  		// Set email format to HTML
 
 $mail->Subject = 'Данные';
-// синтаксис php
-// в php . означает конкатенацию
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
 	E-mail: ' . $email . '';
 
-// чтобы отработал ajax запрос
 if(!$mail->send()) {
     return false;
 } else {

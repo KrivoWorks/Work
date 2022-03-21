@@ -102,10 +102,10 @@ $(document).ready(function() {
     valifateForms('#application-form');
     valifateForms('#services-form');
 
-    // phone mask
+    //phone mask
     $('input[name=phone]').mask("+7 (999) 999 9999");
 
-    email
+    //email
     $('form').submit(function(e) {
         e.preventDefault();
         $.ajax({
